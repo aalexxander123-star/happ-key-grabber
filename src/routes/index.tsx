@@ -142,14 +142,14 @@ function Index() {
           Happ — кроссплатформенная proxy-утилита нового поколения. Получите бесплатный
           ключ доступа и скачайте приложение для своего устройства.
         </p>
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
           <a href="#key">
-            <Button size="lg" className="rounded-full px-7">
-              <KeyRound /> Бесплатный ключ
+            <Button size="lg" className="h-14 rounded-full px-10 text-lg font-semibold shadow-lg shadow-primary/30 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-primary/40">
+              <KeyRound className="size-5" /> Бесплатный ключ
             </Button>
           </a>
           <a href="#download">
-            <Button size="lg" variant="outline" className="rounded-full px-7">
+            <Button size="lg" variant="outline" className="h-14 rounded-full px-10 text-lg font-semibold border-2 transition-all duration-300 hover:scale-105 hover:bg-primary/10">
               Скачать приложение
             </Button>
           </a>
@@ -213,7 +213,7 @@ function Index() {
                 </Button>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <form onSubmit={handleSubmit} className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <Input
                   type="email"
                   required
@@ -221,13 +221,13 @@ function Index() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   maxLength={255}
-                  className="h-12 flex-1 rounded-full border-input/60 bg-background/70 px-5 text-base"
+                  className="h-14 flex-1 rounded-full border-2 border-input/40 bg-background/80 px-6 text-lg shadow-inner focus:border-primary/60 focus:ring-2 focus:ring-primary/20 transition-all duration-300"
                 />
                 <Button
                   type="submit"
                   size="lg"
                   disabled={loading}
-                  className="h-12 rounded-full px-7"
+                  className="h-14 rounded-full px-10 text-lg font-semibold shadow-lg shadow-primary/30 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-primary/40"
                 >
                   {loading ? "Генерация…" : "Получить ключ"}
                 </Button>
