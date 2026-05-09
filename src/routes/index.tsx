@@ -136,7 +136,7 @@ function Index() {
           Built on the powerful Xray core
         </div>
         <h1 className="mx-auto max-w-3xl text-balance text-5xl font-semibold leading-[1.05] tracking-tight md:text-7xl">
-          Безопасный интернет, <span className="gradient-text">в один клик</span>
+          Забирай ключ <span className="gradient-text">бесплатно</span>
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
           Happ — кроссплатформенная proxy-утилита нового поколения. Получите бесплатный
